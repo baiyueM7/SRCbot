@@ -110,6 +110,11 @@ To run the bot, you'll need to configure a few sensitive variables. Here's how t
    sudo apt install ffmpeg git python3-pip
    git clone your_repo_link
    cd your_repo_name
+   # 创建虚拟环境(一次)
+   python3 -m venv .venv
+   # 激活虚拟环境（每次）
+   source .venv/bin/activate
+   # 激活后提示符会变：(.venv) root@proud-snap-2:~/SRCbot#
    pip3 install -r requirements.txt
    python3 main.py
    ```
